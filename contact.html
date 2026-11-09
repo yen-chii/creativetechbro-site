@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Book a discovery call | creativetechbro</title>
+<meta name="description" content="Book a free 30-minute AI discovery call with creativetechbro, or get in touch about interviews and partnerships.">
+<link rel="canonical" href="https://creativetechbro.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="creativetechbro">
+<meta property="og:title" content="Contact | Book a discovery call | creativetechbro">
+<meta property="og:description" content="Book a free 30-minute AI discovery call with creativetechbro, or get in touch about interviews and partnerships.">
+<meta property="og:url" content="https://creativetechbro.com/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#04120f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav">
+  <div class="wrap">
+    <div class="masthead-top"><span>London · Worldwide</span><span>AI Automation / Consulting / Implementation</span></div>
+    <div class="nav-row">
+      <a href="/" class="logo" aria-label="creativetechbro home">creativetechbro</a>
+      <nav class="links" id="navLinks" aria-label="Main">
+        <a class="navlink" href="/">Home</a>
+        <a class="navlink" href="/services.html">Services</a>
+        <a class="navlink" href="/news.html"><span class="live-dot" aria-hidden="true"></span>News</a>
+        <a class="navlink" href="/about.html">About</a>
+        <a class="navlink" href="/contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta desktop-only" href="/contact.html">Book a call</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+  <div class="wrap">
+    <section style="padding-bottom:1.5rem;">
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-title">Let's find where AI <em>fits</em>.</h1>
+      <p class="lede">Tell me a bit about your business and what you want to fix. I'll reply within two working days to book a free 30-minute call.</p>
+    </section>
+    <section style="padding-top:0;">
+      <div class="contact-grid">
+        <dl class="contact-info">
+          <dt>Email</dt><dd><a href="mailto:hello@creativetechbro.com">hello@creativetechbro.com</a></dd>
+          <dt>Press, interviews and partnerships</dt><dd><a href="mailto:hello@creativetechbro.com?subject=Interview%20or%20partnership">Pitch a story or guest</a></dd>
+          <dt>Based in</dt><dd>London, working worldwide</dd>
+          <dt>Response time</dt><dd>Within two working days</dd>
+        </dl>
+        <div class="box">
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden"><label>Leave this empty <input name="bot-field"></label></p>
+            <div class="field-row">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <div class="field"><label for="company">Company or brand</label><input id="company" name="company" autocomplete="organization"></div>
+            <div class="field-row">
+              <div class="field"><label for="service">I'm interested in</label>
+                <select id="service" name="service">
+                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="AI Consulting">AI Consulting</option>
+                  <option value="AI Implementation">AI Implementation</option>
+                  <option value="Discovery Sprint">Discovery Sprint</option>
+                  <option value="Build Project">Build Project</option>
+                  <option value="AI Partner retainer">AI Partner retainer</option>
+                  <option value="Interview or press">Interview or press</option>
+                </select></div>
+              <div class="field"><label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline"><option>Exploring</option><option>Within a month</option><option>1 to 3 months</option><option>3 months plus</option></select></div>
+            </div>
+            <div class="field"><label for="message">What would you like AI to help with?</label><textarea id="message" name="message" rows="5" required></textarea></div>
+            <button class="btn btn-primary" type="submit" style="width:100%;">Send</button>
+            <p class="form-msg" id="contactMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <a href="/" class="logo">creativetechbro</a>
+      <div class="foot-links">
+        <a href="/services.html">Services</a><a href="/news.html">News</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="mailto:hello@creativetechbro.com">hello@creativetechbro.com</a>
+      </div>
+      <p>© <span data-year>2026</span> creativetechbro. London, UK.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+<script>(function(){var s=new URLSearchParams(location.search).get("service");var m={discovery:"Discovery Sprint",build:"Build Project",partner:"AI Partner retainer"};if(s&&m[s]){document.getElementById("service").value=m[s];}})();</script>
+</body>
+</html>
