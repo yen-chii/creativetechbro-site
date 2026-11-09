@@ -11,94 +11,104 @@
 <meta property="og:title" content="Contact | Book a discovery call | creativetechbro">
 <meta property="og:description" content="Book a free 30-minute AI discovery call with creativetechbro, or get in touch about interviews and partnerships.">
 <meta property="og:url" content="https://creativetechbro.com/contact.html">
+<meta property="og:image" content="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#04120f">
+<meta name="theme-color" content="#d9d9d9">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.pexels.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-nav">
-  <div class="wrap">
-    <div class="masthead-top"><span>London · Worldwide</span><span>AI Automation / Consulting / Implementation</span></div>
-    <div class="nav-row">
-      <a href="/" class="logo" aria-label="creativetechbro home">creativetechbro</a>
-      <nav class="links" id="navLinks" aria-label="Main">
-        <a class="navlink" href="/">Home</a>
-        <a class="navlink" href="/services.html">Services</a>
-        <a class="navlink" href="/news.html"><span class="live-dot" aria-hidden="true"></span>News</a>
-        <a class="navlink" href="/about.html">About</a>
-        <a class="navlink" href="/contact.html">Contact</a>
-      </nav>
-      <a class="nav-cta desktop-only" href="/contact.html">Book a call</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
-    </div>
+  <div class="wrap nav-row">
+    <a href="/" class="logo" aria-label="creativetechbro home">creativetech<span>bro</span></a>
+    <nav class="links" id="navLinks" aria-label="Main">
+      <a class="navlink" href="/">Home</a>
+      <a class="navlink" href="/services.html">Services</a>
+      <a class="navlink" href="/news.html"><span class="live-dot" aria-hidden="true"></span>News</a>
+      <a class="navlink" href="/about.html">About</a>
+      <a class="navlink" href="/contact.html">Contact</a>
+    </nav>
+    <a class="nav-cta desktop-only" href="/contact.html#book">Book a call</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
   </div>
 </header>
 <main id="main">
 
-  <div class="wrap">
-    <section style="padding-bottom:1.5rem;">
-      <p class="eyebrow">Contact</p>
-      <h1 class="page-title">Let's find where AI <em>fits</em>.</h1>
-      <p class="lede">Tell me a bit about your business and what you want to fix. I'll reply within two working days to book a free 30-minute call.</p>
-    </section>
-    <section style="padding-top:0;">
-      <div class="contact-grid">
-        <dl class="contact-info">
+  <section style="padding-bottom:2rem;">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Contact</p>
+        <h1 class="h-xl">Reserve a consultation</h1>
+        <p class="lede">Pick a session, or send the details below. I reply within one working day.</p>
+        <dl class="info">
           <dt>Email</dt><dd><a href="mailto:hello@creativetechbro.com">hello@creativetechbro.com</a></dd>
-          <dt>Press, interviews and partnerships</dt><dd><a href="mailto:hello@creativetechbro.com?subject=Interview%20or%20partnership">Pitch a story or guest</a></dd>
           <dt>Based in</dt><dd>London, working worldwide</dd>
-          <dt>Response time</dt><dd>Within two working days</dd>
         </dl>
-        <div class="box">
-          <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <p class="hidden"><label>Leave this empty <input name="bot-field"></label></p>
-            <div class="field-row">
-              <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
-              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            </div>
-            <div class="field"><label for="company">Company or brand</label><input id="company" name="company" autocomplete="organization"></div>
-            <div class="field-row">
-              <div class="field"><label for="service">I'm interested in</label>
-                <select id="service" name="service">
-                  <option value="Not sure yet">Not sure yet</option>
-                  <option value="AI Automation">AI Automation</option>
-                  <option value="AI Consulting">AI Consulting</option>
-                  <option value="AI Implementation">AI Implementation</option>
-                  <option value="Discovery Sprint">Discovery Sprint</option>
-                  <option value="Build Project">Build Project</option>
-                  <option value="AI Partner retainer">AI Partner retainer</option>
-                  <option value="Interview or press">Interview or press</option>
-                </select></div>
-              <div class="field"><label for="timeline">Timeline</label>
-                <select id="timeline" name="timeline"><option>Exploring</option><option>Within a month</option><option>1 to 3 months</option><option>3 months plus</option></select></div>
-            </div>
-            <div class="field"><label for="message">What would you like AI to help with?</label><textarea id="message" name="message" rows="5" required></textarea></div>
-            <button class="btn btn-primary" type="submit" style="width:100%;">Send</button>
-            <p class="form-msg" id="contactMsg" role="status"></p>
-          </form>
-        </div>
       </div>
-    </section>
+      
+  <div class="booking" id="book">
+    <div class="booking-head">📅 Select an appointment</div>
+    <div class="slot"><div><strong>Free Discovery Call</strong><small>30 minutes · video call</small></div><a class="btn btn-dark" href="/contact.html?service=discovery-call#enquire">Book</a></div>
+    <div class="slot"><div><strong>AI Strategy Session</strong><small>60 minutes · audit of one workflow</small></div><a class="btn btn-dark" href="/contact.html?service=strategy#enquire">Book</a></div>
+    <div class="slot"><div><strong>Team AI Workshop</strong><small>Half day · in person or remote</small></div><a class="btn btn-dark" href="/contact.html?service=workshop#enquire">Book</a></div>
+    <p class="booking-foot">Pick a slot and I'll confirm a time within one working day.</p>
   </div>
+    </div>
+  </section>
+  <section id="enquire">
+    <div class="wrap contact-grid">
+      <div><h2 class="h-lg">Submit an inquiry</h2><p>Provide project details to receive a tailored engagement outline.</p></div>
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Leave this empty <input name="bot-field"></label></p>
+        <div class="field-row">
+          <div class="field"><label for="fname">First name <em>(required)</em></label><input id="fname" name="first-name" autocomplete="given-name" required></div>
+          <div class="field"><label for="lname">Last name <em>(required)</em></label><input id="lname" name="last-name" autocomplete="family-name" required></div>
+        </div>
+        <div class="field"><label for="email">Email <em>(required)</em></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field-row">
+          <div class="field"><label for="company">Company or brand</label><input id="company" name="company" autocomplete="organization"></div>
+          <div class="field"><label for="service">Interested in</label>
+            <select id="service" name="service">
+              <option value="Not sure yet">Not sure yet</option>
+              <option value="Free Discovery Call">Free Discovery Call</option>
+              <option value="AI Strategy Session">AI Strategy Session</option>
+              <option value="Team AI Workshop">Team AI Workshop</option>
+              <option value="AI Automation">AI Automation</option>
+              <option value="AI Consulting">AI Consulting</option>
+              <option value="AI Implementation">AI Implementation</option>
+              <option value="Discovery Sprint">Discovery Sprint</option>
+              <option value="Build Project">Build Project</option>
+              <option value="AI Partner retainer">AI Partner retainer</option>
+              <option value="Interview or press">Interview or press</option>
+            </select></div>
+        </div>
+        <div class="field"><label for="when">Preferred days and times</label><input id="when" name="preferred-time" placeholder="e.g. Tue or Thu afternoons"></div>
+        <div class="field"><label for="message">Message <em>(required)</em></label><textarea id="message" name="message" rows="5" required></textarea></div>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p class="form-msg" id="contactMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
 </main>
 <footer>
   <div class="wrap">
-    <div class="footer-row">
-      <a href="/" class="logo">creativetechbro</a>
-      <div class="foot-links">
-        <a href="/services.html">Services</a><a href="/news.html">News</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="mailto:hello@creativetechbro.com">hello@creativetechbro.com</a>
-      </div>
-      <p>© <span data-year>2026</span> creativetechbro. London, UK.</p>
+    <div class="footer-top">
+      <p class="display">creativetechbro</p>
+      <a class="display" href="mailto:hello@creativetechbro.com">hello@creativetechbro.com</a>
+    </div>
+    <div class="footer-bottom">
+      <div><a href="/services.html">Services</a><a href="/news.html">News</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
+      <span>© <span data-year>2026</span> creativetechbro · London, UK · Photos via Pexels</span>
     </div>
   </div>
 </footer>
 <script src="/assets/site.js" defer></script>
-<script>(function(){var s=new URLSearchParams(location.search).get("service");var m={discovery:"Discovery Sprint",build:"Build Project",partner:"AI Partner retainer"};if(s&&m[s]){document.getElementById("service").value=m[s];}})();</script>
+<script>(function(){var s=new URLSearchParams(location.search).get("service");var m={"discovery-call":"Free Discovery Call",strategy:"AI Strategy Session",workshop:"Team AI Workshop",automation:"AI Automation",consulting:"AI Consulting",implementation:"AI Implementation",discovery:"Discovery Sprint",build:"Build Project",partner:"AI Partner retainer",press:"Interview or press"};if(s&&m[s]){document.getElementById("service").value=m[s];}})();</script>
 </body>
 </html>

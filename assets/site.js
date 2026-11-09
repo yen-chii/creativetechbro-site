@@ -7,9 +7,9 @@
 
   // Shown only when the site can't reach its own API (e.g. a local preview).
   var SAMPLE_POSTS = [
-    { slug: "sample-brief", title: "Daily AI Brief: what moved in AI today", subtitle: "The three stories worth your five minutes, and what they mean for creative businesses.", category: "brief", date: new Date().toISOString(), sample: true },
-    { slug: "sample-interview", title: "In conversation: building with AI in fashion", subtitle: "A founder on where AI actually saves time in a creative studio, and where it doesn't.", category: "interview", date: new Date(Date.now() - 864e5 * 2).toISOString(), sample: true },
-    { slug: "sample-article", title: "Automating a voice vs automating a task", subtitle: "Why the best AI rollouts in creative teams start with the boring work.", category: "article", date: new Date(Date.now() - 864e5 * 4).toISOString(), sample: true }
+    { slug: "sample-brief", title: "Daily AI Brief: what moved in AI today", subtitle: "The three stories worth your five minutes, and what they mean for creative businesses.", category: "brief", image: "https://images.pexels.com/photos/1181317/pexels-photo-1181317.jpeg?auto=compress&cs=tinysrgb&w=600", date: new Date().toISOString(), sample: true },
+    { slug: "sample-interview", title: "In conversation: building with AI in fashion", subtitle: "A founder on where AI actually saves time in a creative studio, and where it doesn't.", category: "interview", image: "https://images.pexels.com/photos/4620611/pexels-photo-4620611.jpeg?auto=compress&cs=tinysrgb&w=600", date: new Date(Date.now() - 864e5 * 2).toISOString(), sample: true },
+    { slug: "sample-article", title: "Automating a voice vs automating a task", subtitle: "Why the best AI rollouts in creative teams start with the boring work.", category: "article", image: "https://images.pexels.com/photos/3182772/pexels-photo-3182772.jpeg?auto=compress&cs=tinysrgb&w=600", date: new Date(Date.now() - 864e5 * 4).toISOString(), sample: true }
   ];
 
   function esc(s) {
@@ -94,7 +94,7 @@
     fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: data })
       .then(function (r) {
         if (!r.ok) throw new Error();
-        msg.textContent = "Thanks, that's landed. I'll reply within two working days.";
+        msg.textContent = "Thanks, that's landed. I'll reply within one working day.";
         cf.reset();
       })
       .catch(function () {
@@ -112,7 +112,7 @@
       esc(fmtDate(p.date)) + "</time>" + (p.sample ? "<span>Sample</span>" : "") + "</div><h3>" + esc(p.title) + "</h3><p>" + esc(p.subtitle) + "</p></div></a>";
   }
   function emptyState() {
-    return '<p class="lede" style="padding:1.6rem 0;border-top:1px solid var(--line);">The first dispatch drops soon. Subscribe and it lands in your inbox the same morning.</p>';
+    return '<p class="empty">The first Daily AI Brief drops soon. Subscribe and it lands in your inbox the same morning.</p>';
   }
 
   var postList = $("#postList");
